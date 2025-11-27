@@ -39,7 +39,7 @@ public class CadastroMedicamentoActivity extends AppCompatActivity {
         if (getIntent().hasExtra("medicamento_id")) {
             isEdicao = true;
             medicamentoId = getIntent().getStringExtra("medicamento_id");
-            txtTitulo.setText("Editar medicamento");
+            txtTitulo.setText(R.string.titulo_editar);
             carregarDadosMedicamento();
         }
 
@@ -64,19 +64,19 @@ public class CadastroMedicamentoActivity extends AppCompatActivity {
         String horario = edtHorario.getText().toString().trim();
 
         if (nome.isEmpty()) {
-            edtNome.setError("Digite o nome do medicamento");
+            edtNome.setError(getString(R.string.erro_nome_vazio));
             edtNome.requestFocus();
             return;
         }
 
         if (descricao.isEmpty()) {
-            edtDescricao.setError("Digite a descrição");
+            edtDescricao.setError(getString(R.string.erro_descricao_vazia));
             edtDescricao.requestFocus();
             return;
         }
 
         if (horario.isEmpty()) {
-            edtHorario.setError("Digite o horário");
+            edtHorario.setError(getString(R.string.erro_horario_vazio));
             edtHorario.requestFocus();
             return;
         }
@@ -103,7 +103,7 @@ public class CadastroMedicamentoActivity extends AppCompatActivity {
                     finish();
                 })
                 .addOnFailureListener(e -> {
-                    Toast.makeText(this, "Erro ao cadastrar: " + e.getMessage(),
+                    Toast.makeText(this, getString(R.string.erro_cadastrar, e.getMessage()),
                             Toast.LENGTH_SHORT).show();
                 });
     }
@@ -126,7 +126,7 @@ public class CadastroMedicamentoActivity extends AppCompatActivity {
                     finish();
                 })
                 .addOnFailureListener(e -> {
-                    Toast.makeText(this, "Erro ao atualizar: " + e.getMessage(),
+                    Toast.makeText(this, getString(R.string.erro_atualizar, e.getMessage()),
                             Toast.LENGTH_SHORT).show();
                 });
     }

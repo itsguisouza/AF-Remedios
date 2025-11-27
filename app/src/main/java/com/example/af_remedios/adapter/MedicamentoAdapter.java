@@ -49,7 +49,6 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
         holder.txtDescricao.setText(medicamento.getDescricao());
         holder.txtHorario.setText(medicamento.getHorario());
 
-        // Definir ícone de status (tomado ou não)
         if (medicamento.isTomado()) {
             holder.imgStatus.setImageResource(android.R.drawable.checkbox_on_background);
         } else {

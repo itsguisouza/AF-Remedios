@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AF-Remedios</string>
+    <string name="titulo_principal">Medication control</string>
+    <string name="subtitulo_principal">Manage your medicines</string>
+    <string name="btn_adicionar">Add Medication</string>
+    <string name="lista_vazia_titulo">No medications registered</string>
+    <string name="lista_vazia_subtitulo">Click the + button to add</string>
+
+    <string name="titulo_adicionar">Add medication</string>
+    <string name="titulo_editar">Edit medication</string>
+    <string name="subtitulo_cadastro">Fill in the details below</string>
+    <string name="hint_nome">Medication name</string>
+    <string name="hint_descricao">Description (dosage, use, etc.)</string>
+    <string name="hint_horario">Schedule (e.g.: 08:00, 14:00, 20:00)</string>
+    <string name="btn_salvar">Save</string>
+    <string name="btn_cancelar">Cancel</string>
+
+    <string name="erro_nome_vazio">Enter the medication name</string>
+    <string name="erro_descricao_vazia">Enter the description</string>
+    <string name="erro_horario_vazio">Enter the schedule</string>
+
+    <string name="sucesso_cadastrado">Medication successfully registered!</string>
+    <string name="sucesso_atualizado">Medication successfully updated!</string>
+    <string name="sucesso_excluido">Medication successfully deleted</string>
+    <string name="sucesso_marcado_tomado">Medication taken ✓</string>
+    <string name="sucesso_desmarcado">Medication unmarked</string>
+
+    <string name="erro_carregar">Loading error: %s</string>
+    <string name="erro_cadastrar">Registration error: %s</string>
+    <string name="erro_atualizar">Update error: %s</string>
+    <string name="erro_excluir">Error deleting medication</string>
+    <string name="erro_atualizar_status">Error updating status</string>
+
+    <string name="dialog_titulo_exclusao">Confirm deletion</string>
+    <string name="dialog_mensagem_exclusao">Do you really want to delete %s?</string>
+    <string name="dialog_sim">Yes</string>
+    <string name="dialog_nao">No</string>
+
+    <string name="descricao_status">Medication status</string>
+    <string name="descricao_horario">Schedule</string>
+    <string name="descricao_editar">Edit medication</string>
+    <string name="descricao_excluir">Delete medication</string>
+</resources>

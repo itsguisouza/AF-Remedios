@@ -22,7 +22,7 @@
                 android:id="@+id/txtTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adicionar medicamento"
+                android:text="@string/titulo_adicionar"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Preencha os dados abaixo"
+                android:text="@string/subtitulo_cadastro"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -59,7 +59,7 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Nome do medicamento"
+                        android:hint="@string/hint_nome"
                         app:startIconDrawable="@android:drawable/ic_menu_add">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -75,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:hint="Descrição (dosagem, uso, etc.)"
+                        android:hint="@string/hint_descricao"
                         app:startIconDrawable="@android:drawable/ic_menu_info_details">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:hint="Horário (ex: 08:00, 14:00, 20:00)"
+                        android:hint="@string/hint_horario"
                         app:startIconDrawable="@android:drawable/ic_menu_recent_history">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Cancelar"
+                    android:text="@string/btn_cancelar"
                     app:cornerRadius="8dp" />
 
 
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:text="Salvar"
+                    android:text="@string/btn_salvar"
                     app:cornerRadius="8dp" />
             </LinearLayout>
 

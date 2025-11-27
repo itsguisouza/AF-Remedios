@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Controle de medicamentos"
+            android:text="@string/titulo_principal"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Gerencie seus remédios"
+            android:text="@string/subtitulo_principal"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
     </LinearLayout>
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Nenhum medicamento cadastrado"
+            android:text="@string/lista_vazia_titulo"
             android:textColor="#757575"
             android:textSize="16sp" />
 
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Clique no botão + para adicionar"
+            android:text="@string/lista_vazia_subtitulo"
             android:textColor="#9E9E9E"
             android:textSize="14sp" />
     </LinearLayout>
@@ -82,9 +82,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
-        android:contentDescription="Adicionar medicamento"
+        android:contentDescription="@string/btn_adicionar"
         android:src="@android:drawable/ic_input_add"
-        app:tint="@android:color/white"
-        app:backgroundTint="#9C27B0"/>
+        app:backgroundTint="#9C27B0"
+        app:tint="@android:color/white" />
 
 </RelativeLayout>

@@ -1,3 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">AF-Remedios</string>
+    <string name="titulo_principal">Controle de medicamentos</string>
+    <string name="subtitulo_principal">Gerencie seus remédios</string>
+    <string name="btn_adicionar">Adicionar medicamento</string>
+    <string name="lista_vazia_titulo">Nenhum medicamento cadastrado</string>
+    <string name="lista_vazia_subtitulo">Clique no botão + para adicionar</string>
+
+    <string name="titulo_adicionar">Adicionar medicamento</string>
+    <string name="titulo_editar">Editar medicamento</string>
+    <string name="subtitulo_cadastro">Preencha os dados abaixo</string>
+    <string name="hint_nome">Nome do medicamento</string>
+    <string name="hint_descricao">Descrição (dosagem, uso, etc.)</string>
+    <string name="hint_horario">Horário (ex: 08:00, 14:00, 20:00)</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string name="erro_nome_vazio">Digite o nome do medicamento</string>
+    <string name="erro_descricao_vazia">Digite a descrição</string>
+    <string name="erro_horario_vazio">Digite o horário</string>
+
+    <string name="sucesso_cadastrado">Medicamento cadastrado com sucesso!</string>
+    <string name="sucesso_atualizado">Medicamento atualizado com sucesso!</string>
+    <string name="sucesso_excluido">Medicamento excluído com sucesso</string>
+    <string name="sucesso_marcado_tomado">Medicamento tomado ✓</string>
+    <string name="sucesso_desmarcado">Medicamento desmarcado</string>
+
+    <string name="erro_carregar">Erro ao carregar: %s</string>
+    <string name="erro_cadastrar">Erro ao cadastrar: %s</string>
+    <string name="erro_atualizar">Erro ao atualizar: %s</string>
+    <string name="erro_excluir">Erro ao excluir medicamento</string>
+    <string name="erro_atualizar_status">Erro ao atualizar status</string>
+
+    <string name="dialog_titulo_exclusao">Confirmar exclusão</string>
+    <string name="dialog_mensagem_exclusao">Deseja realmente excluir %s?</string>
+    <string name="dialog_sim">Sim</string>
+    <string name="dialog_nao">Não</string>
+
+    <string name="descricao_status">Status do medicamento</string>
+    <string name="descricao_horario">Horário</string>
+    <string name="descricao_editar">Editar medicamento</string>
+    <string name="descricao_excluir">Excluir medicamento</string>
 </resources>

@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 .addSnapshotListener((value, error) -> {
                     if (error != null) {
                         Toast.makeText(MainActivity.this,
-                                "Erro ao carregar: " + error.getMessage(),
+                                getString(R.string.erro_carregar, error.getMessage()),
                                 Toast.LENGTH_SHORT).show();
                         return;
                     }
@@ -108,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
                 .update("tomado", medicamento.isTomado())
                 .addOnSuccessListener(aVoid -> {
                     String mensagem = medicamento.isTomado() ?
-                            "Medicamento tomado ✓" :
-                            "Medicamento desmarcado";
+                            getString(R.string.sucesso_marcado_tomado) :
+                            getString(R.string.sucesso_desmarcado);
                     Toast.makeText(this, mensagem, Toast.LENGTH_SHORT).show();
                 })
                 .addOnFailureListener(e -> {
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     private void confirmarExclusao(Medicamento medicamento) {
         new AlertDialog.Builder(this)
                 .setTitle("Confirmar exclusão")
-                .setMessage("Deseja realmente excluir " + medicamento.getNome() + "?")
+                .setMessage((getString(R.string.dialog_mensagem_exclusao, medicamento.getNome())) + "?")
                 .setPositiveButton("Sim", (dialog, which) -> excluirMedicamento(medicamento))
                 .setNegativeButton("Não", null)
                 .show();

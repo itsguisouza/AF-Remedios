@@ -42,4 +42,9 @@
     <string name="descricao_horario">Horário</string>
     <string name="descricao_editar">Editar medicamento</string>
     <string name="descricao_excluir">Excluir medicamento</string>
+
+    <string name="notificacao_titulo">⏰ Hora do medicamento!</string>
+    <string name="canal_notificacao_nome">Lembretes de medicamentos</string>
+    <string name="canal_notificacao_descricao">Notificações para lembrar de tomar medicamentos</string>
+
 </resources>

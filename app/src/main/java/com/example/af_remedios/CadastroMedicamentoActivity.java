@@ -46,6 +46,7 @@ public class CadastroMedicamentoActivity extends AppCompatActivity {
         btnSalvar.setOnClickListener(v -> salvarMedicamento());
 
         btnCancelar.setOnClickListener(v -> finish());
+
     }
 
     private void carregarDadosMedicamento() {

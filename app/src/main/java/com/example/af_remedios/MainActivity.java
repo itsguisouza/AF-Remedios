@@ -66,8 +66,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         carregarMedicamentos();
-    }
 
+        Intent serviceIntent = new Intent(this, MedicamentoNotificationService.class);
+        startService(serviceIntent);
+
+    }
     private void carregarMedicamentos() {
         ControleMedicamentos.collection("medicamentos")
                 .addSnapshotListener((value, error) -> {

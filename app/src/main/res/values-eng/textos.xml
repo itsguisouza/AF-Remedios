@@ -42,4 +42,9 @@
     <string name="descricao_horario">Schedule</string>
     <string name="descricao_editar">Edit medication</string>
     <string name="descricao_excluir">Delete medication</string>
+
+    <string name="notificacao_titulo">⏰ Medication time!</string>
+    <string name="canal_notificacao_nome">Medication reminders</string>
+    <string name="canal_notificacao_descricao">Notifications to remind you to take medications</string>
+
 </resources>

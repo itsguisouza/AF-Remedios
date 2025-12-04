@@ -51,8 +51,10 @@ public class MedicamentoAdapter extends RecyclerView.Adapter<MedicamentoAdapter.
 
         if (medicamento.isTomado()) {
             holder.imgStatus.setImageResource(android.R.drawable.checkbox_on_background);
+            holder.imgStatus.setColorFilter(android.graphics.Color.parseColor("#2C2C2C"));
         } else {
             holder.imgStatus.setImageResource(android.R.drawable.checkbox_off_background);
+            holder.imgStatus.setColorFilter(android.graphics.Color.parseColor("#9E9E9E"));
         }
 
         holder.imgStatus.setOnClickListener(v -> {
